@@ -15,26 +15,25 @@
     content: "";
     position: absolute;
     inset: 0;
+    padding: 3px;
     z-index: 20;
     pointer-events: none;
-
     background: linear-gradient(
         135deg,
-        #b97176,
         #3c1516,
+        #b97176,
+        #7f2c32,
         #9d1b22
     );
-
-    clip-path: polygon(
-        5% 0,
-        95% 0,
-        100% 5%,
-        100% 95%,
-        95% 100%,
-        5% 100%,
-        0 95%,
-        0 5%
-    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    box-shadow:
+        0 0 10px #ec6666,
+        0 0 30px #800000,
+        10px 10px 10px rgba(0,0,0,.7);
 }
 
 /* BACKGROUND IMAGE */
