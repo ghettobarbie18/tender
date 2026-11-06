@@ -12,12 +12,22 @@
 .tender-template {
     position: relative !important;
     display: block !important;
-    width: 600px !important;
+    width: 700px !important;
     height: 700px !important;
     margin: 40px auto !important;
     padding: 0 !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
+}
+
+.tender-border {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url("blob:https://chatgpt.com/db7183d6-8c5d-438f-9bcd-6e32f43b7cfa") center / 100% 100% no-repeat;
+    z-index: 20;
+    pointer-events: none;
 }
 
 /* GRADIENT BORDER */
