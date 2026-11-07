@@ -107,7 +107,7 @@
     left: 70px;
     max-width: 600px;
     margin: 0 0 3px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Cormorant Unicase", serif;
     font-weight: 400;
     font-style: normal;
@@ -166,10 +166,10 @@
 /* FLOATING IMAGE */
 .tenderhover-float {
     position: absolute;
-    top: 20px;
+    top: 30px;
     margin: auto;
     width: 250px;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     z-index: 10;
     pointer-events: auto;
@@ -179,9 +179,9 @@
 
 .tenderhover-float:hover {
     filter:
-        drop-shadow(0 0 5px #571357)
-        drop-shadow(0 0 10px #571357)
-        drop-shadow(0 0 20px #571357);
+        drop-shadow(0 0 5px #050E3C)
+        drop-shadow(0 0 10px #002455)
+        drop-shadow(0 0 20px #DC0000);
 }
 
 /* FLOAT ANIMATION */
@@ -207,6 +207,16 @@
     }
 }
 
+ .tender-roses {
+    position: absolute;
+    top: 30px;
+    margin: auto;
+    width: 600px;
+    height: 180px;
+    object-fit: cover;
+    z-index: 10;
+ }
+  
 /* HOVER EFFECTS */
 .tender-template:hover .tender-content {
     opacity: 1;
@@ -244,6 +254,11 @@
             class="tenderhover-float"
             src="https://i.imgur.com/CbnATeX.png"
             alt=""
+        >
+        <img
+           class="tender-roses"
+           scr="https://cdn.pixabay.com/photo/2017/09/16/12/04/flowers-2755297_1280.png"
+           alt=""
         >
 
     </div>
