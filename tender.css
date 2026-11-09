@@ -128,7 +128,7 @@
     z-index: 6;
     width: 500px;
     height: 400px;
-    top: 90px;
+    margin: auto;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
@@ -153,32 +153,21 @@
 /* FLOATING IMAGE */
 .tenderhover-float {
     position: absolute;
-    top: 30px;
-    margin: auto;
+    top: 10px;
+    left: 50px;
     width: 250px;
     height: 220px;
     object-fit: cover;
     z-index: 10;
     pointer-events: auto;
-    animation: float 4s ease-in-out infinite;
     transition: filter .4s ease;
 }
 
 .tenderhover-float:hover {
     filter:
         drop-shadow(0 0 5px #050E3C)
-        drop-shadow(0 0 10px #002455)
-        drop-shadow(0 0 20px #DC0000);
-}
-
-/* FLOAT ANIMATION */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
+        drop-shadow(0 0 5px #002455)
+        drop-shadow(0 0 5px #DC0000);
 }
 
 /* MOVING GRADIENT */
